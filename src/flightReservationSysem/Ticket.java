@@ -1,10 +1,15 @@
 package flightReservationSysem;
 
-public class Ticket {
+class Ticket extends Passenger {
     String pnr;
     String departureFrom, destination;
     String flightName;
-    String dateOfDeparture, timeOfDeparture, DateOfArrival, timeOfArrival;
-
-
+    String flightNum;
+    String dateOfDeparture, timeOfDeparture, dateOfArrival, timeOfArrival;
+    @Override
+    protected void Passenger() {
+        super.Passenger();
+    }
 }
+
+

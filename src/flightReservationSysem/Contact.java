@@ -1,15 +1,25 @@
 package flightReservationSysem;
+import java.util.Scanner;
 
-public class Contact {
-    String name;
-    String phoneNumber;
-    String email;
+public class Contact extends Address{
+    Scanner sc= new Scanner(System.in);
+       private String name;
+       private String phoneNumber;
+       private String email;
 
-    public String contact(String name, String phone, String email){
-        this.name = name;
-        this.phoneNumber = phone;
-        this.email = email;
+        public void setContact(){
+            System.out.println("Enter Name: ");
+            name = sc.nextLine();
 
-        return "Name: " + this.name + " | Phone: " + phoneNumber + " | EmailID: " + this.email;
-    }
+            System.out.println("Enter Phone: ");
+            phoneNumber = sc.nextLine();
+
+            System.out.println("Enter Email: ");
+            email = sc.nextLine();
+
+        }
+
+        public void getContact(){
+            System.out.println("Name: " + name + ", Number: " + phoneNumber + ", EmailID: " + email);
+        }
 }

@@ -1,10 +1,16 @@
 package flightReservationSysem;
 
+import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
+
+import java.util.Scanner;
+
 public class MainSource {
     public static void main(String[] args) {
-        System.out.println("Working");
+        // Create a new Passenger from here
+        Passenger passenger1 = new Passenger();
+        passenger1.Passenger();
 
-        Contact con = new Contact();
-        System.out.println(con.contact("Shailabh", "9719748111", "shailabh.sharma04@googlymail.com"));
     }
 }
+
+

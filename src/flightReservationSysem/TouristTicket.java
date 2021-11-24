@@ -1,4 +1,4 @@
 package flightReservationSysem;
 
-public class TouristTicket {
+public class TouristTicket extends Ticket{
 }

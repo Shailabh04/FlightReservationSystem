@@ -1,4 +1,4 @@
 package flightReservationSysem;
 
-public class RegularTicket {
+public class RegularTicket extends Ticket {
 }
